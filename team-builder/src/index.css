@@ -12,21 +12,38 @@ code {
     monospace;
 }
 
+html {
+  background-color: thistle;
+}
+
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+
 form {
-  margin: 0 auto 0 auto;
-  padding: 5px;
-  width: 250px;
-  height: 250px;
+  margin: 50px auto 0 auto;
+  padding: 10px;
+  width: 230px;
+  height: 130px;
   text-align: justify;
   background-color: yellow;
   box-shadow: 5px 5px;
+  border-radius: 5px;
+}
+
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #name1,
 #email2,
-#role3,
-#submit4 {
-  margin: 0;
+#role3 {
+  margin: 10px;
+  line-height: 30px;
   font-size: 1.1rem;
   width: 250px;
 }
@@ -35,14 +52,23 @@ form input {
   width: 125px;
   background-color: yellow;
   border: none;
+  font-size: 1rem;
 }
 
-#submit4 {
-  margin-left: 50px;
+button {
+  margin-top: 25px;
+  background-color: black;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 30px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px darkgrey;
 }
 
-#submit4 input {
-  font-weight: bold;
-  border: 2px solid black;
-  text-align: center;
+button:hover {
+  background-color: yellow;
+  color: black;
+  box-shadow: 2px 2px black;
 }
